@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+/* font-family: 'Big Shoulders Display',
+cursive;
+font-family: 'Lexend Deca',
+sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --clr-bright-orange--: hsl(31, 77%, 52%);
+  --clr-dark-cyan--: hsl(184, 100%, 22%); 
+  --clr-very-dark-cyan--: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body{
+  font-size: 15px;
+  font-family: 'Lexend Deca',
+    sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+.box{
+  width: 20rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+/* common card class start here */
+
+.card{
+  padding: 3rem;
+  color: var(--Very-light-gray);
+}
+.card-one{
+  background-color: var(--clr-bright-orange--);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-img-container{
+  margin-bottom: 1rem;
+}
+.heading{
+  margin-bottom: 1rem;
+  font-family: 'Big Shoulders Display',cursive;;
+}
+.some-lines{
+  color: var(--Transparent-white);
+  line-height: 1.5;
+}
+.btn{
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  border: 3px solid var(--Very-light-gray);
+  border-radius: 25px;
+}
+.btn-one{
+  color: var(--clr-bright-orange--);
+  background-color: var(--Very-light-gray);
+}
+.btn-one:hover {
+  color: var(--Very-light-gray);
+  background-color: var(--clr-bright-orange--);
+  cursor: pointer;
+}
+.card-two{
+  background-color: var(--clr-dark-cyan--);
+}
+.btn-two{
+  color: var(--clr-dark-cyan--);
+  background-color: var(--Very-light-gray);
+}
+.btn-two:hover {
+  color: var(--Very-light-gray);
+  background-color: var(--clr-dark-cyan--);
+  cursor: pointer;
+}
+.card-three {
+  background-color: var(--clr-very-dark-cyan--);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn-three {
+  color: var(--clr-very-dark-cyan--);
+  background-color: var(--Very-light-gray);
+}
+.btn-three:hover {
+  color: var(--Very-light-gray);
+  background-color: var(--clr-very-dark-cyan--);
+  cursor: pointer;
+}
+@media screen and (min-width: 1263px){
+  .box{
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .card-one{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  .card-three{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+}
